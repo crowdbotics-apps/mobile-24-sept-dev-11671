@@ -8,15 +8,30 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='JHgjhgjhgjh',
+            name="JHgjhgjhgjh",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('cdfvsdgwr', models.ManyToManyField(blank=True, related_name='jhgjhgjhgjh_cdfvsdgwr', to='home.CustomText')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "cdfvsdgwr",
+                    models.ManyToManyField(
+                        blank=True,
+                        related_name="jhgjhgjhgjh_cdfvsdgwr",
+                        to="home.CustomText",
+                    ),
+                ),
             ],
         ),
     ]
